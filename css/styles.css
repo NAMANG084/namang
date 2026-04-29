@@ -491,6 +491,12 @@ body {
     font-weight: 600;
 }
 
+.about-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 /* About Visual - Code Card */
 .code-card {
     background: #0d1f2b;
@@ -538,6 +544,132 @@ pre {
     font-size: 14px;
     line-height: 1.6;
     overflow-x: auto;
+}
+
+/* Dev Profile Card */
+.dev-profile-card {
+    background: #111111;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.dev-profile-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.dev-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.dev-name {
+    font-size: 28px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+    letter-spacing: 0.5px;
+}
+
+.dev-pronouns {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 16px 0;
+}
+
+.dev-headline {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 16px 0;
+    font-weight: 500;
+}
+
+.dev-location {
+    color: #d1d5db;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 24px 0;
+}
+
+.dev-links-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dev-links-section h4 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 4px 0;
+}
+
+.dev-links-section a {
+    color: #8ab4f8; /* Google blueish link color */
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: color 0.3s ease;
+}
+
+.dev-links-section a i {
+    font-size: 22px;
+    color: #9aa0a6;
+    transition: color 0.3s ease;
+}
+
+.dev-links-section a:hover {
+    color: #aecbfa;
+}
+
+.dev-links-section a:hover i {
+    color: #aecbfa;
+}
+
+.dev-badges-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dev-badges-section h4 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+}
+
+.dev-badges-container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.dev-badge {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.dev-badge:hover {
+    transform: translateY(-3px) scale(1.1);
 }
 
 /* Skills Section */
